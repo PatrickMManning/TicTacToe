@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_turn"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/current_turn_text"
+            android:padding="10dp"
+            android:typeface="monospace"
+            android:text="@string/current_turn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/current_turn_value"
+            android:padding="10dp"
+            android:typeface="monospace"
+            tools:text="@string/x_turn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_row_squares"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_left_square"
+            android:background="@drawable/top_left_background"
+            android:typeface="monospace"
+            android:padding="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_center_square"
+            android:background="@drawable/top_center_background"
+            android:typeface="monospace"
+            android:padding="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_right_square"
+            android:background="@drawable/top_right_background"
+            android:typeface="monospace"
+            android:padding="24dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mid_row_squares"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mid_left_square"
+            android:background="@drawable/mid_left_background"
+            android:typeface="monospace"
+            android:padding="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mid_center_square"
+            android:background="@drawable/center_background"
+            android:typeface="monospace"
+            android:padding="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mid_right_square"
+            android:background="@drawable/mid_right_background"
+            android:typeface="monospace"
+            android:padding="24dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_row_squares"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_left_square"
+            android:layout_gravity="start"
+            android:background="@drawable/bottom_left_background"
+            android:typeface="monospace"
+            android:padding="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_center_square"
+            android:background="@drawable/bottom_center_background"
+            android:typeface="monospace"
+            android:padding="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_right_square"
+            android:layout_gravity="end"
+            android:background="@drawable/bottom_right_background"
+            android:typeface="monospace"
+            android:padding="24dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_game"
+        android:typeface="monospace"
+        android:text="@string/new_game"/>
+
+</LinearLayout>
